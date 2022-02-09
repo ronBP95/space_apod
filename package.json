@@ -1,0 +1,29 @@
+{
+  "name": "space_apod",
+  "version": "1.0.0",
+  "description": "App using NASA Api to render APOD",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronBP95/space_apod.git"
+  },
+  "keywords": [
+    "NASA",
+    "Space",
+    "APOD"
+  ],
+  "author": "ronBP95",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronBP95/space_apod/issues"
+  },
+  "homepage": "https://github.com/ronBP95/space_apod#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
