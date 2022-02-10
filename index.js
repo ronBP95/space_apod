@@ -27,7 +27,14 @@ app.get ('/api/members', (req, res) => {
 // Get Single Member
 app.get('/api/members/:id', (req, res) => {
     const memFilt = members();
-    res.json(memFilt.filter(member => member.id === parseInt(req.params.id)))
+    const found = memFilt.some(member => member.id === parseInt(req.params.id));
+
+    if (found) {
+        res.json(memFilt.filter(member => member.id === parseInt(req.params.id)))
+    } else {
+        res.status(400).json({ msg: `No member with the id of ${req.params.id} was found.`});
+    }
+    
 });
 
 // Set static folder
