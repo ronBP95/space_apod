@@ -25,10 +25,9 @@ app.get ('/api/members', (req, res) => {
 })
 
 // Get Single Member
-// Note: There is an issue with the path. Postman requires a ":" in front of the id number in order for the route to get hit
-// Ex. /api/members/:1 and this is likely due to the way the object is stored inside of a function in members.js. Will table for later.
 app.get('/api/members/:id', (req, res) => {
-    res.json(members.filter(member => member.id === + parseInt(req.params.id)));
+    const memFilt = members();
+    res.json(memFilt.filter(member => member.id === parseInt(req.params.id)))
 });
 
 // Set static folder
