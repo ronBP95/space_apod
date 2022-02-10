@@ -1,8 +1,8 @@
 import Express from "express";
 import path from "path"
 import { fileURLToPath } from "url";
-import members from "./Members.js"
 import dayjs from "dayjs"
+import router from "./routes/api/members.js";
 
 const app = Express();
 const port = 3000;
@@ -16,29 +16,12 @@ const logger = (req, res, next) => {
 // Init Middleware
 app.use(logger);
 
-// GET, PUT, POST, DELETE
-// ROUTES
-
-// Gets All Members
-app.get ('/api/members', (req, res) => {
-    res.json(members());
-})
-
-// Get Single Member
-app.get('/api/members/:id', (req, res) => {
-    const memFilt = members();
-    const found = memFilt.some(member => member.id === parseInt(req.params.id));
-
-    if (found) {
-        res.json(memFilt.filter(member => member.id === parseInt(req.params.id)))
-    } else {
-        res.status(400).json({ msg: `No member with the id of ${req.params.id} was found.`});
-    }
-    
-});
-
 // Set static folder
 app.use(Express.static(path.join(__dirname, 'public')));
+
+// Members API Routes
+app.use('/', router)
+app.use('/:id', router)
 
 // Listen on port
 app.listen(port, () => console.log ("listening on port:" + port))
