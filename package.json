@@ -24,6 +24,13 @@
   },
   "homepage": "https://github.com/ronBP95/space_apod#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "axios": "^0.25.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "method-override": "^3.0.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.16.0"
   }
 }
