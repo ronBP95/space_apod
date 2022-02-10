@@ -3,12 +3,12 @@ import members from "../../Members.js"
 const router = express.Router();
 
 // Gets All Members
-router.get ('/api/members', (req, res) => {
+router.get ('/', (req, res) => {
     res.json(members);
 })
 
 // Get Single Member
-router.get('/api/members/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     const found = members.some(member => member.id === parseInt(req.params.id));
     
     if (found) {
