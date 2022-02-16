@@ -15,6 +15,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    text-align: center;
+    z-index: -1;
 }
 
 .navbar {
@@ -121,5 +123,40 @@ h1 {
     font-family: "fontOne";
 }
 
-.
+.homeCont {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 75vh;
+    /* background: white; */
+    margin-top: 5rem;
+    z-index: 0;
+}
 
+.homeChild {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeLChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    margin-top: 2.5rem;
+    width: 35vw;
+    height: 65vh;
+}
+
+.homeRChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    margin-top: 2.5rem;
+    width: 35vw;
+    height: 65vh;
+}
