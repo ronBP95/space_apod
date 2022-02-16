@@ -232,7 +232,7 @@ h1 {
 }
 
 #apodGo a:hover {
-    color: pink;
+    color: aqua;
     transition: 0.3s;
 }
 
@@ -244,6 +244,7 @@ h1 {
     height: 25vh;
     background: url(../assets/images/mars.jfif);
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 5%;
 }
 
@@ -254,7 +255,52 @@ h1 {
 }
 
 #marsGo a:hover {
-    color: pink;
+    color: aqua;
     transition: 0.3s;
 }
 
+#epicGo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 25vh;
+    background: url(../assets/images/earth.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+#epicGo a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#epicGo a:hover {
+    color: aqua;
+    transition: 0.3s;
+}
+
+#donkiGo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 25vh;
+    background: url(../assets/images/database.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+
+#donkiGo a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#donkiGo a:hover {
+    color: aqua;
+    transition: 0.3s;
+}
