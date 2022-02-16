@@ -3,10 +3,13 @@
 }
 
 body {
-    background: #333;
-    color: white;
     margin: 0;
     padding: 0;
+    background-image: url(../assets/moon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .navbar {
