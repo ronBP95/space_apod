@@ -155,7 +155,7 @@ h1 {
     height: 75vh;
 }
 
-.leftCont {
+#leftCont {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +165,7 @@ h1 {
     height: 60vh;
 }
 
-.rightCont {
+#rightCont {
     display: flex;
     flex-direction: column;
     justify-content: center;
