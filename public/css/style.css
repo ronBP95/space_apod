@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../assets/moon.jpg);
+    background-image: url(../assets/images/space.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: gray;
+    background: #333;
     color: white;
     font-family: "fontOne";
 }
@@ -30,6 +30,7 @@ body {
     font-size: 1.5rem;
     margin: .75rem;
     margin-left: 1.5rem;
+    cursor: default;
 }
 
 .navbar-links ul {
@@ -117,5 +118,6 @@ body {
 
 h1 {
     color: white;
+    font-family: "fontOne";
 }
 
