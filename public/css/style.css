@@ -163,7 +163,23 @@ h1 {
     margin-top: 2.5rem;
     width: 35vw;
     height: 65vh;
-    line-height: 1em;
+    line-height: 1.5em;
+}
+
+#exploreButton {
+    border: 1px solid white;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+#exploreButton:hover {
+    background: green;
+    border: 1px solid green;
+    transition: 0.3s;
 }
 
 .homeRChild {
@@ -189,8 +205,56 @@ h1 {
 }
 
 .homeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 10vw;
     height: 25vh;
     background: green;
     border-radius: 5%;
 }
+
+#apodGo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 25vh;
+    background: url(../assets/images/tele.jpg);
+    background-size: cover;
+    border-radius: 5%;
+}
+
+#apodGo a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#apodGo a:hover {
+    color: pink;
+    transition: 0.3s;
+}
+
+#marsGo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 25vh;
+    background: url(../assets/images/mars.jfif);
+    background-size: cover;
+    border-radius: 5%;
+}
+
+#marsGo a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#marsGo a:hover {
+    color: pink;
+    transition: 0.3s;
+}
+
