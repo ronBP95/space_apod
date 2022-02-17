@@ -1,4 +1,5 @@
 import Express, { urlencoded } from "express";
+import 'dotenv/config'
 import path from "path"
 import { fileURLToPath } from "url";
 import dayjs from "dayjs"
@@ -33,3 +34,5 @@ app.post('/api/members', (req, res) => {
 
 // Listen on port
 app.listen(port, () => console.log ("listening on port:" + port))
+
+console.log(process.env)

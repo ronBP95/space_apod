@@ -7,7 +7,7 @@ togglebutton.addEventListener("click", () => {
 
 // ex. query = https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
-fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY", {
+fetch("https://api.nasa.gov/planetary/apod?api_key=", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
@@ -30,8 +30,10 @@ fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY", {
             apodContainer.appendChild(div + "Hello Content!");
             console.log(data.date)
         }
+        console.log('works')
     }
 
+console.log(process.env)
 
 
 
