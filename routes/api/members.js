@@ -2,12 +2,12 @@ import express from 'express';
 import members from "../../Members.js"
 const router = express.Router();
 
-// Gets All Members
+// Gets Data
 router.get ('/', (req, res) => {
-    res.json(members);
+    // res.json(members);
 })
 
-// Get Single Member
+// Get Single Datapoint
 router.get('/:id', (req, res) => {
     const found = members.some(member => member.id === parseInt(req.params.id));
     
@@ -24,3 +24,4 @@ router.post('/'), (req, res) => {
 };
 
 export default router;
+

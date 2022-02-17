@@ -35,4 +35,4 @@ app.post('/api/members', (req, res) => {
 // Listen on port
 app.listen(port, () => console.log ("listening on port:" + port))
 
-console.log(process.env)
+

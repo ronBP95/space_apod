@@ -7,14 +7,15 @@ togglebutton.addEventListener("click", () => {
 
 // ex. query = https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
-fetch("https://api.nasa.gov/planetary/apod?api_key=", {
+function getData () {
+    fetch("https://api.nasa.gov/planetary/apod?api_key=O9l7R1IoU75M1t8b9FzwE0IvmwMAagiwiB3Ing0H", {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
     },
 })
     .then(res => {
-            return res.json()
+            console.log(res.json()) 
     })
     .then (function (data) {
         appendData(data)
@@ -32,8 +33,7 @@ fetch("https://api.nasa.gov/planetary/apod?api_key=", {
         }
         console.log('works')
     }
+}
 
-console.log(process.env)
-
-
-
+getData();
+// console.log(stuff + "loaded correctly!")
